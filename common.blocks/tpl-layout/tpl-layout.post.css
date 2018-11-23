@@ -1,0 +1,9 @@
+.tpl-layout {
+	&__container {
+		&_size {
+			&_ms {
+				max-width: 914px;
+			}
+		}
+	}
+}

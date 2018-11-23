@@ -1,11 +1,50 @@
 .header {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	height: 70px;
+	&::after {
+		content: '';
+		top: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+		position: absolute;
+		display: block;
+		height: 1px;
+		width: 100vw;
+		background-color: var(--color-bg-border);
+	}
 
 	&__menu {
 		display: flex;
 		align-items: center;
+	}
+
+	&__item {
+		position: relative;
+		cursor: pointer;
+		&_active {
+			&::after {
+				content: '';
+				position: absolute;
+				top: 39px;
+				left: 50%;
+				margin-left: -15px;
+				width: 30px;
+				height: 6px;
+				background-color: var(--color-bg-action);
+			}
+		}
+		&:hover * {
+			color: var(--color-link) !important;
+		}
+	}
+
+	&__lk {
+		&:hover * {
+			color: var(--color-link) !important;
+			cursor: pointer;
+		}
 	}
 }

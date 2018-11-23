@@ -1,0 +1,14 @@
+.footer {
+	position: relative;
+	&::after {
+		content: '';
+		top: -30px;
+		left: 50%;
+		transform: translateX(-50%);
+		position: absolute;
+		display: block;
+		height: 1px;
+		width: 100vw;
+		background-color: var(--color-bg-border);
+	}
+}

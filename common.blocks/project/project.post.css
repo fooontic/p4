@@ -1,0 +1,10 @@
+.project {
+	cursor: pointer;
+	margin: 0 -8px 12px;
+	&:hover {
+		.project__head {
+			transition: fill .3s;
+			fill: #0063BA;
+		}
+	}
+}

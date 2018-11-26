@@ -1,0 +1,29 @@
+.btn {
+	text-decoration: none;
+	cursor: pointer;
+	display: inline-block;
+	height: 44px;
+	line-height: 44px;
+	font-size: 15px;
+	padding: 0 var(--space-l);
+	transition: all .3s;
+	box-sizing: border-box;
+	text-align: center;
+	&_view {
+		&_action {
+			color: #fff;
+			background-color: var(--color-bg-action);
+			&:hover {
+				opacity: .85;
+			}
+		}
+		&_secondary {
+			color: var(--color-bg-action);
+			border: 2px solid var(--color-bg-action);
+			line-height: 40px;
+			&:hover {
+				background-color: rgba(30, 70, 240, 0.1);
+			}
+		}
+	}
+}

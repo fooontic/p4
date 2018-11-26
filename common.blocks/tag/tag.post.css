@@ -1,0 +1,19 @@
+.tag {
+	display: inline-block;
+	margin-right: var(--space-xs);
+	transition: all .2s;
+	cursor: pointer;
+	color: var(--color-typo-primary);
+	&_size {
+		&_s {
+			font-size: var(--size-typo-xs);
+			line-height: 20px;
+			padding: 0 var(--space-xs);
+			border: 1px solid #95A9BA;
+			border-radius: 50%;
+		}
+	}
+	&:hover {
+		color: var(--color-link);
+	}
+}

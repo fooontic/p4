@@ -17,7 +17,7 @@ $color-bg-selection: color($color-base-project h(-1) l(+31%)); /* Цвет фо�
 $color-bg-hover: color($color-base-base a(15%)); /* Цвет фона при наведении */
 $color-bg-border: color($color-base-phantom a(5%)); /* Цвет границ */
 $color-bg-stripe: color($color-base-phantom a(4%)); /* Цвет зебры */
-$color-bg-ghost: color($color-base-phantom a(8%)); /* Цвет затенения */
+$color-bg-ghost: #f7f4f0; /* Цвет затенения */
 $color-bg-default: $color-base-essential; /* Цвет дефолта */
 $color-bg-tone: color($color-base-phantom a(90%)); /* Цвет паранджи */
 $color-bg-soft: color($color-base-essential a(97%)); /* Цвет молока */
@@ -33,7 +33,7 @@ $color-bg-link: color($color-base-path h(-7%) s(-13) l(+14) a(40%)); /* Цвет
 $color-typo-brand: $color-base-project; /* Цвет брендового текста */
 $color-typo-primary: $color-base-base; /* Цвет основного текста */
 $color-typo-promo: color($color-base-base a(80%)); /* Цвет промо текста */
-$color-typo-secondary: color($color-base-base a(60%)); /* Цвет второстепенного текста */
+$color-typo-secondary: color($color-base-base s(-100%) a(60%)); /* Цвет второстепенного текста */
 $color-typo-ghost: color($color-base-base a(30%)); /* Цвет дополнительного текста */
 $color-typo-disable: color($color-base-base a(30%)); /* Цвет неактивного текста */
 $color-typo-success: $color-base-success; /* Цвет текста успеха */

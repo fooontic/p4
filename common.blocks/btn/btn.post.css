@@ -2,11 +2,11 @@
 	text-decoration: none;
 	cursor: pointer;
 	display: inline-block;
+	transition: all .3s;
 	height: 44px;
 	line-height: 44px;
 	font-size: 15px;
 	padding: 0 var(--space-l);
-	transition: all .3s;
 	box-sizing: border-box;
 	text-align: center;
 	&_view {
@@ -24,6 +24,15 @@
 			&:hover {
 				background-color: rgba(30, 70, 240, 0.1);
 			}
+		}
+	}
+	&_size {
+		&_s {
+			height: 32px;
+			line-height: 32px;
+			font-size: 13px;
+			padding: 0 var(--space-s);
+			&.btn_view_secondary { line-height: 28px; }
 		}
 	}
 }

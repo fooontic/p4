@@ -6,11 +6,11 @@ module.exports = {
 	head: [
 		{ elem: 'meta', attrs: { name: 'description', content: '' } },
 		{ elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' } },
-		{ elem: 'css', url: 'project-in.min.css' },
+		{ elem: 'css', url: 'gpn-project-in.min.css' },
 		{ elem: 'css', url: 'https://fonts.googleapis.com/css?family=Roboto:400,500,700' },
 		{ elem: 'js', url: 'https://code.jquery.com/jquery-3.2.1.js' },
 	],
-	scripts: [{ elem: 'js', url: 'project-in.min.js' }],
+	scripts: [{ elem: 'js', url: 'gpn-project-in.min.js' }],
 	mods: { theme: 'islands' },
 	mix: [
 		{
@@ -28,14 +28,15 @@ module.exports = {
 					content: [
 						{
 							block: 'header',
-							changeUrl: '../gpn-project-in/gpn-project-in.html'
+							user: 'gpn',
+							changeUrl: '../project-in/project-in.html'
 						},
 					]
 				},
 				{
 					elem: 'container',
 					elemMods: { size: 'm', align: 'center' },
-					mix: { block: 'decorator', mods: { 'space-t': 'xxxxxl' }},
+					mix: { block: 'decorator', mods: { 'space-t': 'xxxl' }},
 					content: [
 						{
 							block: 'tpl-grid',
@@ -46,6 +47,29 @@ module.exports = {
 									elem: 'fraction',
 									elemMods: { col: '8' },
 									content: [
+
+
+										// Настройка страницы
+										{
+											block: 'decorator', mods: { 'space-h': 'xl', 'space-v': 'l', 'indent-b': 'xxxxl' },
+											attrs: { style: 'background: var(--color-bg-ghost)' },
+											content: [
+												{
+													block: 'btn',
+													mods: { view: 'secondary', size: 's' },
+													mix: { block: 'decorator', mods: { 'indent-r': 'm' }},
+													content: 'Редактировать описание проекта'
+												},
+												{
+													block: 'btn',
+													mods: { view: 'secondary', size: 's' },
+													content: '+ Добавить вакансию'
+												},
+											]
+										},
+										// Настройка страницы
+
+
 										{
 											block: 'tag',
 											mods: { size: 's' },
@@ -82,10 +106,36 @@ module.exports = {
 										{
 											content: [
 												{
-													block: 'text',
-													mods: { size: 'xl', weight: 'bold', view: 'primary' },
-													mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
-													content: 'Заказчики'
+													attrs: { style: 'display: flex; align-items: baseline' },
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'xl', weight: 'bold', view: 'primary' },
+															mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
+															content: 'Заказчики'
+														},
+														// {
+														// 	block: 'pt-icon-plus',
+														// 	mods: { 'vertical-align': 'center' },
+														// 	attrs: { style: 'margin-left: 20px' },
+														// 	content: [
+														// 		{
+														// 			block: 'icon',
+														// 			mods: { name: 'edit', size: 's', view: 'secondary' },
+														// 			mix: { block: 'pt-icon-plus', elem: 'icon', elemMods: { 'indent-r': 'xxs' }, },
+														// 			attrs: { style: 'opacity: .4' },
+														// 		},
+														// 		{
+														// 			elem: 'block',
+														// 			content: {
+														// 				block: 'text',
+														// 				mods: { size: 'm', view: 'secondary' },
+														// 				content: 'Редактировать'
+														// 			},
+														// 		}
+														// 	]
+														// },
+													]
 												},
 												{
 													block: 'tpl-grid',
@@ -136,10 +186,36 @@ module.exports = {
 										{
 											content: [
 												{
-													block: 'text',
-													mods: { size: 'xl', weight: 'bold', view: 'primary' },
-													mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
-													content: 'Эксперты'
+													attrs: { style: 'display: flex; align-items: baseline' },
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'xl', weight: 'bold', view: 'primary' },
+															mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
+															content: 'Эксперты'
+														},
+														// {
+														// 	block: 'pt-icon-plus',
+														// 	mods: { 'vertical-align': 'center' },
+														// 	attrs: { style: 'margin-left: 20px' },
+														// 	content: [
+														// 		{
+														// 			block: 'icon',
+														// 			mods: { name: 'edit', size: 's', view: 'secondary' },
+														// 			mix: { block: 'pt-icon-plus', elem: 'icon', elemMods: { 'indent-r': 'xxs' }, },
+														// 			attrs: { style: 'opacity: .4' },
+														// 		},
+														// 		{
+														// 			elem: 'block',
+														// 			content: {
+														// 				block: 'text',
+														// 				mods: { size: 'm', view: 'secondary' },
+														// 				content: 'Редактировать'
+														// 			},
+														// 		}
+														// 	]
+														// },
+													]
 												},
 												{
 													block: 'tpl-grid',
@@ -227,10 +303,36 @@ module.exports = {
 										{
 											content: [
 												{
-													block: 'text',
-													mods: { size: 'xl', weight: 'bold', view: 'primary' },
-													mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
-													content: 'Команда'
+													attrs: { style: 'display: flex; align-items: baseline' },
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'xl', weight: 'bold', view: 'primary' },
+															mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
+															content: 'Команда'
+														},
+														// {
+														// 	block: 'pt-icon-plus',
+														// 	mods: { 'vertical-align': 'center' },
+														// 	attrs: { style: 'margin-left: 20px' },
+														// 	content: [
+														// 		{
+														// 			block: 'icon',
+														// 			mods: { name: 'edit', size: 's', view: 'secondary' },
+														// 			mix: { block: 'pt-icon-plus', elem: 'icon', elemMods: { 'indent-r': 'xxs' }, },
+														// 			attrs: { style: 'opacity: .4' },
+														// 		},
+														// 		{
+														// 			elem: 'block',
+														// 			content: {
+														// 				block: 'text',
+														// 				mods: { size: 'm', view: 'secondary' },
+														// 				content: 'Редактировать'
+														// 			},
+														// 		}
+														// 	]
+														// },
+													]
 												},
 												{
 													block: 'tpl-grid',
@@ -389,6 +491,426 @@ module.exports = {
 												},
 											]
 										},
+
+
+										/////////////////////////
+										// Необходимые кандидаты
+										{
+											block: 'decorator', mods: { 'space-h': 'xl', 'space-v': 'xxl', 'indent-b': 'xxxxl' },
+											attrs: { style: 'background: var(--color-bg-ghost)' },
+											content: [
+												{
+													attrs: { style: 'display: flex; justify-content: space-between; align-items: baseline' },
+													content: [
+														{
+															block: 'text',
+															mods: { size: 'xxl', view: 'primary', weight: 'bold' },
+															mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
+															content: 'Необходимые кандидаты'
+														},
+														{
+															block: 'text',
+															mods: { size: 'm', view: 'secondary' },
+															content: '+ Добавить вакансию'
+														},
+													]
+												},
+
+												// Фулл-стек
+												{
+													attrs: { style: 'display: flex; justify-content: space-between; align-items: baseline' },
+													content: [
+														{
+															content: [
+																{
+																	block: 'text',
+																	mods: { size: 'xl', view: 'link', display: 'inline-block' },
+																	mix: { block: 'decorator', mods: { 'indent-r': 's', 'indent-b': 'l' }},
+																	content: 'Full-stack Разработчик'
+																},
+																{
+																	block: 'badge',
+																	mods: { view: 'default' },
+																	attrs: { style: '--color-bg-ghost: rgba(0,0,0,0.12); top: 5px' },
+																	content: 'В поиске'
+																},
+															]
+														},
+														// {
+														// 	block: 'pt-icon-plus',
+														// 	mods: { 'vertical-align': 'center' },
+														// 	content: [
+														// 		{
+														// 			block: 'icon',
+														// 			mods: { name: 'edit', size: 's', view: 'secondary' },
+														// 			mix: { block: 'pt-icon-plus', elem: 'icon', elemMods: { 'indent-r': 'xs' }, },
+														// 			attrs: { style: 'opacity: .4' },
+														// 		},
+														// 		{
+														// 			elem: 'block',
+														// 			content: {
+														// 				block: 'text',
+														// 				mods: { size: 'm', view: 'secondary' },
+														// 				content: 'Редактировать вакансию'
+														// 			},
+														// 		}
+														// 	]
+														// },
+													]
+												},
+
+												// Откликнувшиеся
+												{
+													block: 'text',
+													mods: { size: 'xs', transform: 'uppercase', weight: 'semibold', spacing: 's', view: 'primary' },
+													mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+													content: 'Откликнувшиеся'
+												},
+												{
+													block: 'tpl-grid',
+													mods: { 'col-gap': 'half', 'row-gap': 'half', 's-ratio': '1-1' },
+													mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+													content: [
+														{
+															block: 'candidate',
+															content: [
+																{
+																	block: 'pt-icon-plus',
+																	mods: { 'vertical-align': 'top' },
+																	content: [
+																		{
+																			elem: 'icon',
+																			elemMods: { 'indent-r': 's'},
+																			content: {
+																				block: 'image',
+																				attrs: { style: 'width: 60px; height: 60px' },
+																				url: '../../assets/onotole.jpg'
+																			},
+																		},
+																		{
+																			elem: 'block',
+																			content: [
+																				{
+																					block: 'text',
+																					mods: { size: 'm', view: 'primary' },
+																					mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
+																					content: 'Вассерман Анатолий'
+																				},
+																				{
+																					block: 'text',
+																					mods: { size: 's', view: 'secondary' },
+																					mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
+																					content: '65 лет, Санкт-Петербург'
+																				},
+																				{
+																					block: 'text',
+																					mods: { size: 's', view: 'primary' },
+																					content: 'vasserman@yandex.ru'
+																				},
+																			]
+																		}
+																	]
+																},
+																{
+																	block: 'text',
+																	mods: { size: 's', transform: 'uppercase' , view: 'link', align: 'center' },
+																	mix: { block: 'decorator', mods: { 'indent-t': 'm', 'space-t': 's' }},
+																	attrs: { style: 'border-top: 1px solid var(--color-bg-border)' },
+																	content: 'Пригласить в проект'
+																},
+															]
+														},
+														{
+															block: 'candidate',
+															content: [
+																{
+																	block: 'pt-icon-plus',
+																	mods: { 'vertical-align': 'top' },
+																	content: [
+																		{
+																			elem: 'icon',
+																			elemMods: { 'indent-r': 's'},
+																			content: {
+																				block: 'image',
+																				attrs: { style: 'width: 60px; height: 60px' },
+																				url: '../../assets/avatar_8.png'
+																			},
+																		},
+																		{
+																			elem: 'block',
+																			content: [
+																				{
+																					block: 'text',
+																					mods: { size: 'm', view: 'primary' },
+																					mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
+																					content: 'Тормакова Лола'
+																				},
+																				{
+																					block: 'text',
+																					mods: { size: 's', view: 'secondary' },
+																					mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
+																					content: '31 год, Саратов'
+																				},
+																				{
+																					block: 'text',
+																					mods: { size: 's', view: 'primary' },
+																					content: 'vasserman@yandex.ru'
+																				},
+																			]
+																		}
+																	]
+																},
+																{
+																	block: 'text',
+																	mods: { size: 's', transform: 'uppercase' , view: 'link', align: 'center' },
+																	mix: { block: 'decorator', mods: { 'indent-t': 'm', 'space-t': 's' }},
+																	attrs: { style: 'border-top: 1px solid var(--color-bg-border)' },
+																	content: 'Пригласить в проект'
+																},
+															]
+														}
+													]
+												},
+												// Откликнувишеся
+
+												// Рекомендуемые
+												{
+													block: 'text',
+													mods: { size: 'xs', transform: 'uppercase', weight: 'semibold', spacing: 's', view: 'primary' },
+													mix: { block: 'decorator', mods: { 'indent-b': 's' }},
+													content: 'Рекомендуемые'
+												},
+												{
+													block: 'tpl-grid',
+													mods: { 'col-gap': 'half', 'row-gap': 'half', 's-ratio': '1-1' },
+													mix: { block: 'decorator', mods: { 'indent-b': 'm' }},
+													content: [
+														{
+															block: 'candidate',
+															content: [
+																{
+																	block: 'pt-icon-plus',
+																	mods: { 'vertical-align': 'top' },
+																	content: [
+																		{
+																			elem: 'icon',
+																			elemMods: { 'indent-r': 's'},
+																			content: {
+																				block: 'image',
+																				attrs: { style: 'width: 60px; height: 60px' },
+																				url: '../../assets/avatar_10.png'
+																			},
+																		},
+																		{
+																			elem: 'block',
+																			content: [
+																				{
+																					block: 'text',
+																					mods: { size: 'm', view: 'primary' },
+																					mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
+																					content: 'Цхадиашвили Иракли'
+																				},
+																				{
+																					block: 'text',
+																					mods: { size: 's', view: 'secondary' },
+																					mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
+																					content: '33 года, Москва'
+																				},
+																				{
+																					block: 'text',
+																					mods: { size: 's', view: 'primary' },
+																					content: 'zhairakli@yandex.ru'
+																				},
+																			]
+																		}
+																	]
+																},
+																{
+																	block: 'text',
+																	mods: { size: 's', transform: 'uppercase' , view: 'link', align: 'center' },
+																	mix: { block: 'decorator', mods: { 'indent-t': 'm', 'space-t': 's' }},
+																	attrs: { style: 'border-top: 1px solid var(--color-bg-border)' },
+																	content: 'Пригласить в проект'
+																},
+															]
+														},
+														{
+															block: 'candidate',
+															content: [
+																{
+																	block: 'pt-icon-plus',
+																	mods: { 'vertical-align': 'top' },
+																	content: [
+																		{
+																			elem: 'icon',
+																			elemMods: { 'indent-r': 's'},
+																			content: {
+																				block: 'image',
+																				attrs: { style: 'width: 60px; height: 60px' },
+																				url: '../../assets/avatar_12.png'
+																			},
+																		},
+																		{
+																			elem: 'block',
+																			content: [
+																				{
+																					block: 'text',
+																					mods: { size: 'm', view: 'primary' },
+																					mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
+																					content: 'Лысиков Евгений'
+																				},
+																				{
+																					block: 'text',
+																					mods: { size: 's', view: 'secondary' },
+																					mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
+																					content: '28 лет, Москва'
+																				},
+																				{
+																					block: 'text',
+																					mods: { size: 's', view: 'primary' },
+																					content: 'lysykov@gmail.com'
+																				},
+																			]
+																		}
+																	]
+																},
+																{
+																	block: 'text',
+																	mods: { size: 's', transform: 'uppercase' , view: 'link', align: 'center' },
+																	mix: { block: 'decorator', mods: { 'indent-t': 'm', 'space-t': 's' }},
+																	attrs: { style: 'border-top: 1px solid var(--color-bg-border)' },
+																	content: 'Пригласить в проект'
+																},
+															]
+														}
+													]
+												},
+												{
+													block: 'see-more',
+													mix: { block: 'decorator', mods: { 'indent-b': 'xxl' }},
+													content: [
+														{
+															block: 'pt-icon-plus',
+															mods: { 'vertical-align': 'center' },
+															content: [
+																{
+																	block: 'icon',
+																	mods: { name: 'arrow-down', view: 'secondary', size: 's' },
+																	mix: { block: 'pt-icon-plus', elem: 'icon', elemMods: { 'indent-r': 'xs' }},
+																},
+																{
+																	elem: 'block',
+																	content: {
+																		block: 'text',
+																		mods: { size: 'm', view: 'primary' },
+																		content: 'Посмотреть все рекомендации'
+																	},
+																}
+															]
+														},
+													]
+												},
+												// Рекомендуемые
+
+												// Аналитик
+												{
+													attrs: { style: 'display: flex; justify-content: space-between; align-items: baseline' },
+													content: [
+														{
+															content: [
+																{
+																	block: 'text',
+																	mods: { size: 'xl', view: 'link', display: 'inline-block' },
+																	mix: { block: 'decorator', mods: { 'indent-r': 's', 'indent-b': 'l' }},
+																	content: 'Системный аналитик'
+																},
+																{
+																	block: 'badge',
+																	mods: { view: 'success' },
+																	attrs: { style: 'top: 5px' },
+																	content: 'Кандидат найден'
+																},
+															]
+														},
+														// {
+														// 	block: 'pt-icon-plus',
+														// 	mods: { 'vertical-align': 'center' },
+														// 	content: [
+														// 		{
+														// 			block: 'icon',
+														// 			mods: { name: 'edit', size: 's', view: 'secondary' },
+														// 			mix: { block: 'pt-icon-plus', elem: 'icon', elemMods: { 'indent-r': 'xs' }, },
+														// 			attrs: { style: 'opacity: .4' },
+														// 		},
+														// 		{
+														// 			elem: 'block',
+														// 			content: {
+														// 				block: 'text',
+														// 				mods: { size: 'm', view: 'secondary' },
+														// 				content: 'Редактировать вакансию'
+														// 			},
+														// 		}
+														// 	]
+														// },
+													]
+												},
+												{
+													block: 'tpl-grid',
+													mods: { 'col-gap': 'half', 'row-gap': 'half', 's-ratio': '1-1' },
+													content: [
+														{
+															block: 'candidate',
+															content: [
+																{
+																	block: 'pt-icon-plus',
+																	mods: { 'vertical-align': 'top' },
+																	content: [
+																		{
+																			elem: 'icon',
+																			elemMods: { 'indent-r': 's'},
+																			content: {
+																				block: 'image',
+																				attrs: { style: 'width: 60px; height: 60px' },
+																				url: '../../assets/avatar_9.png'
+																			},
+																		},
+																		{
+																			elem: 'block',
+																			content: [
+																				{
+																					block: 'text',
+																					mods: { size: 'm', view: 'primary' },
+																					mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
+																					content: 'Минаев Валерий'
+																				},
+																				{
+																					block: 'text',
+																					mods: { size: 's', view: 'secondary' },
+																					mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
+																					content: '29 лет, Санкт-Петербург'
+																				},
+																				{
+																					block: 'text',
+																					mods: { size: 's', view: 'primary' },
+																					content: 'minaevvalery@gmail.com'
+																				},
+																			]
+																		}
+																	]
+																},
+															]
+														}
+													]
+												},
+												// Аналитик
+											]
+										},
+										// Необходимые кандидаты
+										////////////////////////
+
+
+										////////////////////////
+										// Описание проекта
 										{
 											block: 'text',
 											mods: { size: 'xl', weight: 'bold', view: 'primary' },

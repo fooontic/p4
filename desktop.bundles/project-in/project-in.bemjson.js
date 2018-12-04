@@ -112,7 +112,7 @@ module.exports = {
 																			block: 'text',
 																			mods: { size: 'm', view: 'primary' },
 																			mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
-																			content: 'Гуреев Сергей Николаевич'
+																			content: 'Самсонов Сергей Николаевич'
 																		},
 																		{
 																			block: 'text',
@@ -123,7 +123,7 @@ module.exports = {
 																		{
 																			block: 'text',
 																			mods: { size: 's', view: 'primary' },
-																			content: 'gureev@gpn.ru'
+																			content: 'samsonov@gpn.ru'
 																		},
 																	]
 																}
@@ -166,7 +166,7 @@ module.exports = {
 																			block: 'text',
 																			mods: { size: 'm', view: 'primary' },
 																			mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
-																			content: 'Кочегаров Александр Николаевич'
+																			content: 'Самойлов Дмитрий Николаевич'
 																		},
 																		{
 																			block: 'text',
@@ -177,7 +177,7 @@ module.exports = {
 																		{
 																			block: 'text',
 																			mods: { size: 's', view: 'primary' },
-																			content: 'kochegarov@gpn.ru'
+																			content: 'samoilov@gpn.ru'
 																		},
 																	]
 																}
@@ -203,7 +203,7 @@ module.exports = {
 																			block: 'text',
 																			mods: { size: 'm', view: 'primary' },
 																			mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
-																			content: 'Чебан Екатерина Петровна'
+																			content: 'Кукушкина Мария Петровна'
 																		},
 																		{
 																			block: 'text',
@@ -214,7 +214,7 @@ module.exports = {
 																		{
 																			block: 'text',
 																			mods: { size: 's', view: 'primary' },
-																			content: 'chebanep@gpn.ru'
+																			content: 'kukushkinamp@gpn.ru'
 																		},
 																	]
 																}

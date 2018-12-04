@@ -162,7 +162,7 @@ module.exports = {
 																			block: 'text',
 																			mods: { size: 'm', view: 'primary' },
 																			mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
-																			content: 'Гуреев Сергей Николаевич'
+																			content: 'Самсонов Сергей Николаевич'
 																		},
 																		{
 																			block: 'text',
@@ -173,7 +173,7 @@ module.exports = {
 																		{
 																			block: 'text',
 																			mods: { size: 's', view: 'primary' },
-																			content: 'gureev@gpn.ru'
+																			content: 'samsonov@gpn.ru'
 																		},
 																	]
 																}
@@ -242,7 +242,7 @@ module.exports = {
 																			block: 'text',
 																			mods: { size: 'm', view: 'primary' },
 																			mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
-																			content: 'Кочегаров Александр Николаевич'
+																			content: 'Самойлов Дмитрий Николаевич'
 																		},
 																		{
 																			block: 'text',
@@ -253,7 +253,7 @@ module.exports = {
 																		{
 																			block: 'text',
 																			mods: { size: 's', view: 'primary' },
-																			content: 'kochegarov@gpn.ru'
+																			content: 'samoilov@gpn.ru'
 																		},
 																	]
 																}
@@ -279,7 +279,7 @@ module.exports = {
 																			block: 'text',
 																			mods: { size: 'm', view: 'primary' },
 																			mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
-																			content: 'Чебан Екатерина Петровна'
+																			content: 'Кукушкина Мария Петровна'
 																		},
 																		{
 																			block: 'text',
@@ -290,7 +290,7 @@ module.exports = {
 																		{
 																			block: 'text',
 																			mods: { size: 's', view: 'primary' },
-																			content: 'chebanep@gpn.ru'
+																			content: 'kukushkinamp@gpn.ru'
 																		},
 																	]
 																}
@@ -494,7 +494,7 @@ module.exports = {
 
 
 										/////////////////////////
-										// Необходимые кандидаты
+										// Необходимые специалисты
 										{
 											block: 'decorator', mods: { 'space-h': 'xl', 'space-v': 'xxl', 'indent-b': 'xxxxl' },
 											attrs: { style: 'background: var(--color-bg-ghost)' },
@@ -506,7 +506,7 @@ module.exports = {
 															block: 'text',
 															mods: { size: 'xxl', view: 'primary', weight: 'bold' },
 															mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
-															content: 'Необходимые кандидаты'
+															content: 'Необходимые специалисты'
 														},
 														{
 															block: 'text',
@@ -905,7 +905,7 @@ module.exports = {
 												// Аналитик
 											]
 										},
-										// Необходимые кандидаты
+										// Необходимые специалисты
 										////////////////////////
 
 

@@ -1,0 +1,19 @@
+.vacancy-tag {
+	display: inline-block;
+	height: 24px;
+	font-size: var(--size-typo-s);
+	line-height: 24px;
+	padding: 0 var(--space-xs);
+	margin-right: var(--space-xs);
+	margin-bottom: var(--space-xs);
+	background-color: var(--color-typo-primary);
+	color: #fff;
+	cursor: pointer;
+	&:hover {
+		background-color: #00527a;
+	}
+	&_view_disabled {
+		background-color: var(--color-typo-ghost);
+		/*color: var(--color-typo-secondary);*/
+	}
+}

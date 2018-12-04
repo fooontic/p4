@@ -4,13 +4,16 @@
 	transition: all .2s;
 	cursor: pointer;
 	color: var(--color-typo-primary);
+	border: 1px solid #95A9BA;
 	&_size {
-		&_s {
+		&_xs {
 			font-size: var(--size-typo-xs);
 			line-height: 20px;
 			padding: 0 var(--space-xs);
-			border: 1px solid #95A9BA;
-			border-radius: 50%;
+			border-radius: 99em;
+		}
+		&_s {
+			/*border: 1px solid #95A9BA;*/
 		}
 	}
 	&:hover {

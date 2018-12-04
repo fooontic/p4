@@ -95,6 +95,8 @@
 
 	&__account {
 		position: absolute;
+		top: 0;
+		padding-top: 30px;
 		visibility: hidden;
 		opacity: 0;
 		max-height: 0;

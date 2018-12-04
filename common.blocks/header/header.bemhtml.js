@@ -30,22 +30,13 @@ block('header').content()(function() {
 					},
 					{
 						elem: 'item',
-						elemMods: { active: _ctx.active === 'Заказчику' ? true : false },
+						tag: 'a', attrs: { href: '../all-companies/all-companies.html' },
+						elemMods: { active: _ctx.active === 'Все компании' ? true : false },
 						mix: { block: 'decorator', mods: { 'space-h': 'l' }},
 						content: {
 							block: 'text',
 							mods: { size: 's', view: 'primary', transform: 'uppercase', weight: 'semibold', spacing: 'xs' },
-							content: 'Заказчику'
-						},
-					},
-					{
-						elem: 'item',
-						elemMods: { active: _ctx.active === 'Исполнителю' ? true : false },
-						mix: { block: 'decorator', mods: { 'space-h': 'l' }},
-						content: {
-							block: 'text',
-							mods: { size: 's', view: 'primary', transform: 'uppercase', weight: 'semibold', spacing: 'xs' },
-							content: 'Исполнителю'
+							content: 'Все компании'
 						},
 					},
 					{

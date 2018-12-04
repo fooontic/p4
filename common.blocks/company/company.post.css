@@ -1,0 +1,38 @@
+.company {
+	background: #fff;
+	text-decoration: none;
+	/*padding: var(--space-m) var(--space-l) var(--space-l);*/
+	cursor: pointer;
+	text-align: center;
+	box-shadow:
+		0 0 2px 0 rgba(0,0,0,0.1),
+		0 4px 10px -2px rgba(0,0,0,0.2);
+	transition: all .2s;
+
+	&__logo {
+		height: 80px;
+		margin: var(--space-xxxl) 0;
+	}
+
+	& .text_size_xxl {
+		font-size: 28px;
+	}
+
+	&__description {
+		/*display: flex;
+		justify-content: space-between;*/
+		box-sizing: border-box;
+		background: var(--color-bg-ghost);
+		/*padding: var(--space-s) var(--space-m);*/
+		padding: var(--space-xxl) var(--space-l);
+	}
+
+
+	&:hover {
+		transform: translateY(-5px);
+		box-shadow:
+			0 20px 26px -10px rgba(0,0,0,0.10),
+			0 0 8px -2px rgba(0,0,0,0.20);
+		& .text_size_xxl { color: var(--color-link); }
+	}
+}

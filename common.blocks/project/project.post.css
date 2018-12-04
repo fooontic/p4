@@ -1,10 +1,43 @@
 .project {
 	cursor: pointer;
-	margin: 0 -8px 12px;
+	/*margin: 0 -8px 12px;*/
+	background: #fff;
+	padding: var(--space-xxl);
+	box-shadow:
+	0 0 2px 0 rgba(0,0,0,0.1),
+	0 4px 10px -2px rgba(0,0,0,0.2);
+	transition: all .2s;
+	cursor: pointer;
+
+	&_view_disabled {
+		/*opacity: .7;*/
+		background: rgba(255,255,255, .3);
+		& * { opacity: .9; }
+	}
+	&__col-75 {
+		/*margin: var(--space-s) 0 var(--space-m);*/
+		width: 75%;
+	}
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		&_align {
+			&_baseline {
+				align-items: baseline;
+			}
+		}
+	}
+	&__col-20 {
+		width: 20%;
+		/*margin-top: var(--space-l);*/
+	}
+
 	&:hover {
-		.project__head {
-			transition: fill .3s;
-			fill: #0063BA;
+		box-shadow:
+			0 20px 26px -10px rgba(0,0,0,0.10),
+			0 0 8px -2px rgba(0,0,0,0.20);
+		& .text_size_xxl {
+			color: var(--color-link);
 		}
 	}
 }

@@ -4,37 +4,60 @@ block('company').content()(function() {
 
 	return [
 		{
-			block: 'image',
-			mix: { block: 'company', elem: 'logo' },
-			attrs: _ctx.imgAttrs ? _ctx.imgAttrs : '',
-			url: _ctx.imgUrl ? _ctx.imgUrl : ''
+			elem: 'header',
+			attrs: { style: 'background: ' + _ctx.bgColor },
+			content: {
+				block: 'image',
+				mix: { block: 'company', elem: 'logo' },
+				attrs: _ctx.imgAttrs ? _ctx.imgAttrs : '',
+				url: _ctx.imgUrl ? _ctx.imgUrl : ''
+			},
 		},
 		{
-			elem: 'description',
+			elem: 'content',
 			content: [
 				{
-					block: 'text',
-					mods: { size: 'xxl', weight: 'bold', view: 'primary', align: 'center' },
-					mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
-					content: _ctx.heading
+					block: 'tag',
+					mods: { size: 'xs' },
+					mix: { block: 'decorator', mods: { 'indent-r': 'xs' }},
+					attrs: { style: 'margin-left: -2px' },
+					content: _ctx.tag1
 				},
+				_ctx.tag2 ? {
+					block: 'tag',
+					mods: { size: 'xs' },
+					mix: { block: 'decorator', mods: { 'indent-r': 'xs' }},
+					content: _ctx.tag2
+				} : '',
+				_ctx.tagExtra ? {
+					block: 'text',
+					mods: { size: 's', view: 'ghost', display: 'inline-block' },
+					content: _ctx.tagExtra
+				} : '',
 				{
+					block: 'text',
+					mods: { size: 's', view: 'primary' },
+					mix: { block: 'company', elem: 'desc' },
+					content: _ctx.desc
+				},
+				_ctx.stats ? {
 					block: 'tpl-grid',
 					mods: { 's-ratio': '1-1-1' },
-					mix: { block: 'decorator', mods: { 'space-v': 'm' }},
-					// attrs: { style: 'border-top: 1px solid var(--color-bg-border)' },
+					mix: [
+						{ block: 'decorator', mods: { 'space-v': 's' }},
+						{ block: 'company', elem: 'stats' }
+					],
 					content: [
 						{
 							content: [
 								{
 									block: 'text',
 									mods: { size: 'xxxl', view: 'primary' },
-									mix: { block: 'decorator', mods: { 'indent-b': 'xs' }},
-									content: _ctx.num1
+									content: _ctx.stats.num1
 								},
 								{
 									block: 'text',
-									mods: { size: 'xs', view: 'secondary', weight: 'semibold', spacing: 'xs', transform: 'uppercase' },
+									mods: { size: 'xs', view: 'primary' },
 									content: 'В поиске'
 								},
 							]
@@ -44,12 +67,11 @@ block('company').content()(function() {
 								{
 									block: 'text',
 									mods: { size: 'xxxl', view: 'primary' },
-									mix: { block: 'decorator', mods: { 'indent-b': 'xs' }},
-									content: _ctx.num2
+									content: _ctx.stats.num2
 								},
 								{
 									block: 'text',
-									mods: { size: 'xs', view: 'secondary', weight: 'semibold', spacing: 'xs', transform: 'uppercase' },
+									mods: { size: 'xs', view: 'primary' },
 									content: 'Реализуется'
 								},
 							]
@@ -59,18 +81,22 @@ block('company').content()(function() {
 								{
 									block: 'text',
 									mods: { size: 'xxxl', view: 'primary' },
-									mix: { block: 'decorator', mods: { 'indent-b': 'xs' }},
-									content: _ctx.num3
+									content: _ctx.stats.num3
 								},
 								{
 									block: 'text',
-									mods: { size: 'xs', view: 'secondary', weight: 'semibold', spacing: 'xs', transform: 'uppercase' },
+									mods: { size: 'xs', view: 'primary' },
 									content: 'Завершено'
 								},
 							]
 						},
 					]
-				}
+				} : {
+					block: 'text',
+					mods: { size: 'm', view: 'secondary', align: 'center' },
+					mix: { block: 'decorator', mods: { 'indent-t': 'l' }},
+					content: 'Пока нет проектов'
+				},
 			]
 		},
 	]

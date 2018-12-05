@@ -45,7 +45,7 @@ module.exports = {
 									content: {
 										block: 'image',
 										attrs: { style: 'width: 140px; height: 140px' },
-										url: '../../assets/onotole-big.jpg'
+										url: '../../assets/dolgov-big.png'
 									},
 								},
 								{
@@ -56,13 +56,13 @@ module.exports = {
 											block: 'text',
 											mods: { size: 'xxxl', weight: 'bold', view: 'primary' },
 											mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
-											content: 'Анатолий Вассерман'
+											content: 'Николай Долгов'
 										},
 										{
 											block: 'text',
 											mods: { size: 'm', view: 'secondary' },
 											mix: { block: 'decorator', mods: { 'indent-b': 'xs' }},
-											content: 'Мужчина, 65 лет'
+											content: 'Мужчина, 40 лет'
 										},
 										{
 											block: 'pt-icon-plus',
@@ -101,7 +101,7 @@ module.exports = {
 														block: 'text',
 														mods: { size: 's', view: 'secondary' },
 														attrs: { style: 'margin-top: -6px' },
-														content: 'vasserman@yandex.ru'
+														content: 'dolgov@yandex.ru'
 													},
 												}
 											]

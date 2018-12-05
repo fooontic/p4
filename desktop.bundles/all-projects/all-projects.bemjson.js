@@ -6,11 +6,11 @@ module.exports = {
 	head: [
 		{ elem: 'meta', attrs: { name: 'description', content: '' } },
 		{ elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' } },
-		{ elem: 'css', url: 'gpn-all-projects.min.css' },
+		{ elem: 'css', url: 'all-projects.min.css' },
 		{ elem: 'css', url: 'https://fonts.googleapis.com/css?family=Roboto:400,500,700' },
 		{ elem: 'js', url: 'https://code.jquery.com/jquery-3.2.1.js' },
 	],
-	scripts: [{ elem: 'js', url: 'gpn-all-projects.min.js' }],
+	scripts: [{ elem: 'js', url: 'all-projects.min.js' }],
 	mods: { theme: 'islands' },
 	mix: [
 		{
@@ -28,8 +28,7 @@ module.exports = {
 					content: [
 						{
 							block: 'header',
-							user: 'gpn',
-							changeUrl: '../all-projects/all-projects.html'
+							changeUrl: '../gpn-all-projects/gpn-all-projects.html'
 						},
 					]
 				},
@@ -67,7 +66,7 @@ module.exports = {
 								{
 									block: 'project',
 									tag: 'a',
-									attrs: { style: 'display: block; text-decoration: none', href: '../gpn-project-in/gpn-project-in.html' },
+									attrs: { style: 'display: block; text-decoration: none', href: '../project/project.html' },
 									mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
 									tags: [
 										{
@@ -149,8 +148,8 @@ module.exports = {
 
 								{
 									block: 'text',
-									mods: { size: 'xl', weight: 'bold', view: 'primary' },
-									mix: { block: 'decorator', mods: { 'indent-t': 'xxxl', 'indent-b': 'xl' }},
+									mods: { size: 'xl', weight: 'bold', view: 'primary', display: 'inline-block' },
+									mix: { block: 'decorator', mods: { 'indent-t': 'xxxl', 'indent-b': 'xl', 'indent-r': 'm' }},
 									content: 'В стадии реализации'
 								},
 								{

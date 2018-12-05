@@ -309,7 +309,7 @@ module.exports = {
 															block: 'text',
 															mods: { size: 'xl', weight: 'bold', view: 'primary' },
 															mix: { block: 'decorator', mods: { 'indent-b': 'l' }},
-															content: 'Команда'
+															content: 'Команда компании'
 														},
 														// {
 														// 	block: 'pt-icon-plus',
@@ -1023,6 +1023,13 @@ module.exports = {
 											mods: { size: 'l', view: 'primary' },
 											mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
 											content: 'Заказчиком будут предоставлены доступ к видео и фоторесурсам: записи, трансляции и прочее, демонстрирующего облет площадки. '
+										},
+										{
+											block: 'btn',
+											tag: 'a',
+											mods: { view: 'secondary' },
+											attrs: { style: 'width: 100%', href: '../gpn-all-projects/gpn-all-projects.html' },
+											content: 'Посмотреть другие проекты'
 										},
 									]
 								},

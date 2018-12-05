@@ -8,8 +8,9 @@ block('header').content()(function() {
 				content: [
 					{
 						block: 'text',
-						mods: { size: 'l', view: 'link', weight: 'bold' },
-						attrs: { href: '../index/index.html', style: 'margin-top: -4px' },
+						mods: { size: 'l', view: 'link', weight: 'bold', display: 'block' },
+						tag: 'a',
+						attrs: { href: '../index/index.html', style: 'margin-top: -4px; text-decoration: none' },
 						content: 'Профессионалы 4.0'
 					},
 				]
@@ -30,7 +31,7 @@ block('header').content()(function() {
 					},
 					{
 						elem: 'item',
-						tag: 'a', attrs: { href: '../all-companies/all-companies.html' },
+						tag: 'a', attrs: { href: _ctx.user === 'gpn' ? '../gpn-all-companies/gpn-all-companies.html' : '../all-companies/all-companies.html' },
 						elemMods: { active: _ctx.active === 'Все компании' ? true : false },
 						mix: { block: 'decorator', mods: { 'space-h': 'l' }},
 						content: {
@@ -64,7 +65,7 @@ block('header').content()(function() {
 								content: {
 									block: 'image',
 									attrs: { style: 'width: 32px; height: 32px; display: block; margin-top: -2px; border-radius: 50%' },
-									url: _ctx.user === 'gpn' ? '../../assets/GPN.svg' : '../../assets/onotole.jpg'
+									url: _ctx.user === 'gpn' ? '../../assets/GPN.svg' : '../../assets/dolgov.png'
 								}
 							},
 							{
@@ -74,7 +75,7 @@ block('header').content()(function() {
 									block: 'text',
 									tag: 'a', attrs: { href: '../profile/profile.html', style: 'text-decoration: none' },
 									mods: { size: 'm', view: 'primary' },
-									content: _ctx.user === 'gpn' ? 'Газпром Нефть' : 'Анатолий Вассерман'
+									content: _ctx.user === 'gpn' ? 'Газпром Нефть' : 'Николай Долгов'
 								},
 							}
 						]
@@ -83,14 +84,16 @@ block('header').content()(function() {
 						block: 'pt-list',
 						mix: [{ block: 'header', elem: 'account' }, { block: 'decorator', mods: { 'indent-t': 'm' }}],
 						content: _ctx.user === 'gpn' ? [
-						 {
-							 elem: 'item',
-							 elemMods: { 'space-v': 'xs' },
-							 content: {
-								 block: 'text',
-								 mods: { size: 'm', view: 'primary' },
-								 content: 'Все проекты компании'
-							 },
+						{
+							elem: 'item',
+	 						tag: 'a', attrs: { href: '../gpn-all-projects/gpn-all-projects.html' },
+							elemMods: { 'space-v': 'xs' },
+							attrs: { style: 'display: block' },
+							content: {
+								block: 'text',
+								mods: { size: 'm', view: 'primary' },
+								content: 'Все проекты компании'
+							},
 						 },
 						 {
 							 elem: 'item',
@@ -113,9 +116,9 @@ block('header').content()(function() {
 						 {
 							 elem: 'item',
 							 elemMods: { 'space-v': 'm', 'indent-t': 's', border: 'top' },
+							tag: 'a', attrs: { href: _ctx.changeUrl ? _ctx.changeUrl : '', style: 'display: block; text-decoration: none' },
 							 content: {
 								 block: 'text',
-								 tag: 'a', attrs: { href: _ctx.changeUrl ? _ctx.changeUrl : '' },
 								 mods: { size: 'xs', view: 'secondary', transform: 'uppercase', weight: 'semibold', spacing: 'xs' },
 								 content: 'Сменить пользователя'
 							 },
@@ -151,9 +154,9 @@ block('header').content()(function() {
 							{
 								elem: 'item',
 								elemMods: { 'space-v': 'm', 'indent-t': 's', border: 'top' },
+ 							tag: 'a', attrs: { href: _ctx.changeUrl ? _ctx.changeUrl : '', style: 'display: block; text-decoration: none' },
 								content: {
 									block: 'text',
- 									tag: 'a', attrs: { href: _ctx.changeUrl ? _ctx.changeUrl : '' },
 									mods: { size: 'xs', view: 'secondary', transform: 'uppercase', weight: 'semibold', spacing: 'xs' },
 									content: 'Сменить пользователя'
 								},

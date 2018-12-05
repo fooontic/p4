@@ -60,7 +60,6 @@ module.exports = {
 
 								{
 									block: 'project',
-									tag: 'a',
 									attrs: { style: 'display: block; text-decoration: none', href: '../project/project.html' },
 									mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
 									tags: [
@@ -102,8 +101,7 @@ module.exports = {
 
 								{
 									block: 'project',
-									tag: 'a',
-									attrs: { style: 'display: block; text-decoration: none', href: '../project/project.html' },
+									attrs: { style: 'display: block; text-decoration: none' },
 									mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
 									tags: [
 										{
@@ -148,8 +146,7 @@ module.exports = {
 
 								{
 									block: 'project',
-									tag: 'a',
-									attrs: { style: 'display: block; text-decoration: none', href: '../project/project.html' },
+									attrs: { style: 'display: block; text-decoration: none' },
 									mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
 									tags: [
 										{
@@ -194,8 +191,7 @@ module.exports = {
 
 								{
 									block: 'project',
-									tag: 'a',
-									attrs: { style: 'display: block; text-decoration: none', href: '../project/project.html' },
+									attrs: { style: 'display: block; text-decoration: none' },
 									mix: { block: 'decorator', mods: { 'indent-b': 'xl' }},
 									tags: [
 										{

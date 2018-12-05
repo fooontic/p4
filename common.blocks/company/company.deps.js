@@ -30,7 +30,10 @@
 						['xxs', 'xs', 's', 'm', 'l', 'xl', 'xxl', 'xxxl', 'xxxxl', 'xxxxxl', 'xxxxxxl'],
 				}
 			},
-			{ block: 'text', mods: { size: [ 'xxxxl', 'xxxl', 'xxl', 'm', 's', 'xs'], view: ['link', 'primary', 'secondary'], weight: ['bold', 'semibold'], transform: 'uppercase', spacing: 'xs' } },
+			{ block: 'text',
+				mods: { size: [ 'xxxxl', 'xxxl', 'xxl', 'm', 's', 'xs'], view: ['link', 'primary', 'secondary'], weight: ['bold', 'semibold'], transform: 'uppercase', spacing: 'xs', display: 'inline-block', align: 'center',  }},
+			{ block: 'tpl-grid', mods: { 's-ratio': '1-1-1' }},
+			{ block: 'tag', mods: { size: 'xs' }}
 		]
 	}
 ]);

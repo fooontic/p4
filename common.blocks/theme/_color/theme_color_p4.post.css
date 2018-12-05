@@ -15,7 +15,7 @@ $color-bg-brand: $color-base-project; /* Цвет фона брендирова�
 $color-bg-action: color($color-base-project l(+15%)); /* Цвет фона действия */
 $color-bg-selection: color($color-base-project h(-1) l(+31%)); /* Цвет фона выделения */
 $color-bg-hover: color($color-base-base a(15%)); /* Цвет фона при наведении */
-$color-bg-border: color($color-base-phantom a(5%)); /* Цвет границ */
+$color-bg-border: color($color-base-phantom a(12%)); /* Цвет границ */
 $color-bg-stripe: color($color-base-phantom a(4%)); /* Цвет зебры */
 $color-bg-ghost: #f7f4f0; /* Цвет затенения */
 $color-bg-default: $color-base-essential; /* Цвет дефолта */

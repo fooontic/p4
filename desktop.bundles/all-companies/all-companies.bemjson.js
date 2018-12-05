@@ -6,11 +6,11 @@ module.exports = {
 	head: [
 		{ elem: 'meta', attrs: { name: 'description', content: '' } },
 		{ elem: 'meta', attrs: { name: 'viewport', content: 'width=device-width, initial-scale=1' } },
-		{ elem: 'css', url: 'gpn-all-companies.min.css' },
+		{ elem: 'css', url: 'all-companies.min.css' },
 		{ elem: 'css', url: 'https://fonts.googleapis.com/css?family=Roboto:400,500,700' },
 		{ elem: 'js', url: 'https://code.jquery.com/jquery-3.2.1.js' },
 	],
-	scripts: [{ elem: 'js', url: 'gpn-all-companies.min.js' }],
+	scripts: [{ elem: 'js', url: 'all-companies.min.js' }],
 	mods: { theme: 'islands' },
 	mix: [
 		{
@@ -28,9 +28,8 @@ module.exports = {
 					content: [
 						{
 							block: 'header',
-							user: 'gpn',
 							active: 'Все компании',
-							changeUrl: '../all-companies/all-companies.html'
+							changeUrl: '../gpn-all-companies/gpn-all-companies.html'
 						},
 					]
 				},

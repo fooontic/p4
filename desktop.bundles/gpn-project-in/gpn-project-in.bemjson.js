@@ -584,7 +584,7 @@ module.exports = {
 																			content: {
 																				block: 'image',
 																				attrs: { style: 'width: 60px; height: 60px' },
-																				url: '../../assets/onotole.jpg'
+																				url: '../../assets/dolgov.jpg'
 																			},
 																		},
 																		{
@@ -594,7 +594,7 @@ module.exports = {
 																					block: 'text',
 																					mods: { size: 'm', view: 'primary' },
 																					mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
-																					content: 'Вассерман Анатолий'
+																					content: 'Долгов Николай'
 																				},
 																				{
 																					block: 'text',
@@ -1029,7 +1029,7 @@ module.exports = {
 											tag: 'a',
 											mods: { view: 'secondary' },
 											attrs: { style: 'width: 100%', href: '../gpn-all-projects/gpn-all-projects.html' },
-											content: 'Посмотреть другие проекты'
+											content: 'Посмотреть другие проекты компании'
 										},
 									]
 								},

@@ -149,8 +149,8 @@ module.exports = {
 
 								{
 									block: 'text',
-									mods: { size: 'xl', weight: 'bold', view: 'primary' },
-									mix: { block: 'decorator', mods: { 'indent-t': 'xxxl', 'indent-b': 'xl' }},
+									mods: { size: 'xl', weight: 'bold', view: 'primary', display: 'inline-block' },
+									mix: { block: 'decorator', mods: { 'indent-t': 'xxxl', 'indent-b': 'xl', 'indent-r': 'm' }},
 									content: 'В стадии реализации'
 								},
 								{

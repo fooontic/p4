@@ -50,5 +50,4 @@ $line-height-typo-xxxxxxl: 115px;
 
 ul > li, ol > li {
 	padding-bottom: var(--space-xs);
-	list-style-type: circle;
 }

@@ -269,7 +269,7 @@ module.exports = {
 																	content: {
 																		block: 'image',
 																		attrs: { style: 'display: block; width: 60px; height: 60px' },
-																		url: '../../assets/avatar_3.png'
+																		url: '../../assets/avatar_4.png'
 																	},
 																},
 																{
@@ -349,7 +349,7 @@ module.exports = {
 																	content: {
 																		block: 'image',
 																		attrs: { style: 'display: block; width: 60px; height: 60px' },
-																		url: '../../assets/avatar_4.png'
+																		url: '../../assets/avatar_3.png'
 																	},
 																},
 																{
@@ -584,7 +584,7 @@ module.exports = {
 																			content: {
 																				block: 'image',
 																				attrs: { style: 'width: 60px; height: 60px' },
-																				url: '../../assets/dolgov.jpg'
+																				url: '../../assets/dolgov.png'
 																			},
 																		},
 																		{
@@ -600,7 +600,7 @@ module.exports = {
 																					block: 'text',
 																					mods: { size: 's', view: 'secondary' },
 																					mix: { block: 'decorator', mods: { 'indent-b': 'xxs' }},
-																					content: '65 лет, Санкт-Петербург'
+																					content: '42 года, Санкт-Петербург'
 																				},
 																				{
 																					block: 'text',
@@ -923,7 +923,7 @@ module.exports = {
 											content: 'Автоматизированная оценка хода строительства на основании полученных данных с беспилотных летательных аппаратов:'
 										},
 										{
-											tag: 'ol',
+											tag: 'ul',
 											attrs: { style: 'padding-left: 20px' },
 											block: 'decorator', mods: { 'indent-b': 'xxxl' },
 											content: [
@@ -1022,7 +1022,7 @@ module.exports = {
 											block: 'text',
 											mods: { size: 'l', view: 'primary' },
 											mix: { block: 'decorator', mods: { 'indent-b': 'xxxl' }},
-											content: 'Заказчиком будут предоставлены доступ к видео и фоторесурсам: записи, трансляции и прочее, демонстрирующего облет площадки. '
+											content: 'Заказчиком будут предоставлены доступ к видео и фоторесурсам: записи, трансляции и прочее, демонстрирующее облет площадки. '
 										},
 										{
 											block: 'btn',

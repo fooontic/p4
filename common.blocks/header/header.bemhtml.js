@@ -86,9 +86,9 @@ block('header').content()(function() {
 						content: _ctx.user === 'gpn' ? [
 						{
 							elem: 'item',
-	 						tag: 'a', attrs: { href: '../gpn-all-projects/gpn-all-projects.html' },
+	 						tag: 'a',
 							elemMods: { 'space-v': 'xs' },
-							attrs: { style: 'display: block' },
+							attrs: { href: '../gpn-all-projects/gpn-all-projects.html', style: 'display: block' },
 							content: {
 								block: 'text',
 								mods: { size: 'm', view: 'primary' },
@@ -110,7 +110,7 @@ block('header').content()(function() {
 							 content: {
 								 block: 'text',
 								 mods: { size: 'm', view: 'primary' },
-								 content: 'Настройки аккаунты'
+								 content: 'Настройки аккаунта'
 							 },
 						 },
 						 {
@@ -148,7 +148,7 @@ block('header').content()(function() {
 								content: {
 									block: 'text',
 									mods: { size: 'm', view: 'primary' },
-									content: 'Настройки аккаунты'
+									content: 'Настройки аккаунта'
 								},
 							},
 							{
